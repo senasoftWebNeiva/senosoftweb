@@ -6,7 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@lang('CreateGame')</title>
     <link rel="stylesheet" href="../css/app.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
     <script>
+        $(function(){
+            $("#Entrar").click(function(){
+                crearSesion();
+            });
+
+            /* funcion crea variable de session en localStorage */
+            function crearSesion(){
+                var codigo= $("#codigo").val();
+                var sesion = window.localStorage.setItem('partida', codigo);
+                console.log(sesion);
+            }
+        })
+
+        ////////////////////////////////////////////////////////////////////////////////
+        /* funciones que generan valor hexadecimal */
         generarCodigo();
         function generarLetra(){
 	        var letras = ["a","b","c","d","e","f","0","1","2","3","4","5","6","7","8","9"];
@@ -21,18 +38,19 @@
 	        }
             document.getElementById("codigo").value = coolor.toUpperCase();
         }
+        ///////////////////////////////////////////////////////////////////////////////
     </script>
 </head>
-<body onload="generarCodigo();>
+<body onload="generarCodigo();">
     <img class="logo" src="../images/logoCrear.svg" alt="">
     <div class="container">
         <br><br><br><br><br>
         <span class="titulo">CODIGO:</span>
-        <form action="crearpartida" method="POST">
+        <form action="{{ url('/crearpartida')}}" method="POST">
             @csrf
-            <input class="form-control" type="text"  id="codigo">
+            <input class="form-control" type="text"  id="codigo" name="codigo">
             <span>Comparte este código con tus amigos para que</span><br><span>se puedan unir.</span><br>
-            <a href="{{ route('crearPartida') }}"><button class="boton"></button></a>
+            <input type="button" class="boton" value="Entrar" name="Entrar" id="Entrar">
         </form>
     </div>
 </body>
@@ -100,5 +118,6 @@
         background-attachment: local;
         margin-top: 63px;
         margin-left: 27%;
+        color: transparent;
     }
 </style>

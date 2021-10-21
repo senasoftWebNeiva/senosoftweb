@@ -21,4 +21,5 @@ Route::get('/', function () {
 Route::view('/inicio', 'inicio')->name('inicio');
 Route::view('/crear-partida', 'crearPartida')->name('crearPartida');
 Route::view('/unirse-a-una-partida', 'unirsePartida')->name('UnirsePartida');
-Route::resource('crearpartida', PartidaController::class);
+Route::view('/partida', 'partidaActiva')->name('PartidaActiva');
+Route::resource('/crearpartida', PartidaController::class);

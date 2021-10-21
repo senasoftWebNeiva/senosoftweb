@@ -35,7 +35,11 @@ class PartidaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $partida=request()->except('_token', 'Entrar');
+        partida::insert($partida);
+        /* return response()->json($partida); */
+        
+        return view('/partida');
     }
 
     /**
