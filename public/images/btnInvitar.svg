@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="79" viewBox="0 0 83 79">
+  <defs>
+    <filter id="Trazado_1079" x="0" y="0" width="83" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_1079-2" x="0" y="0" width="83" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_301" data-name="Grupo 301" transform="translate(-1803.326 -93)">
+    <g id="Grupo_288" data-name="Grupo 288" transform="translate(64.326 -109.96)">
+      <g data-type="innerShadowGroup">
+        <g transform="matrix(1, 0, 0, 1, 1739, 202.96)" filter="url(#Trazado_1079)">
+          <path id="Trazado_1079-3" data-name="Trazado 1079" d="M32.5,0C50.449,0,65,13.655,65,30.5S50.449,61,32.5,61,0,47.345,0,30.5,14.551,0,32.5,0Z" transform="translate(9 6)" fill="#fff"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, 1739, 202.96)" filter="url(#Trazado_1079-2)">
+          <path id="Trazado_1079-4" data-name="Trazado 1079" d="M32.5,0C50.449,0,65,13.655,65,30.5S50.449,61,32.5,61,0,47.345,0,30.5,14.551,0,32.5,0Z" transform="translate(9 6)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <path id="Icon_ionic-md-add" data-name="Icon ionic-md-add" d="M39.764,24.977H25.458V38.915h-4.4V24.977H6.75V20.688H21.056V6.75h4.4V20.688H39.764Z" transform="translate(1819.05 108.168)" fill="#513a9b" stroke="#513a9b" stroke-width="5"/>
+    <path id="Icon_ionic-md-add-2" data-name="Icon ionic-md-add" d="M39.764,24.977H25.458V38.915h-4.4V24.977H6.75V20.688H21.056V6.75h4.4V20.688H39.764Z" transform="translate(1822.05 106.168)" fill="#82164c" stroke="#82164c" stroke-width="5"/>
+    <path id="Icon_ionic-md-add-3" data-name="Icon ionic-md-add" d="M39.764,24.977H25.458V38.915h-4.4V24.977H6.75V20.688H21.056V6.75h4.4V20.688H39.764Z" transform="translate(1821.859 106.168)" fill="#fff"/>
+  </g>
+</svg>

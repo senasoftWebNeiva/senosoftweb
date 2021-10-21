@@ -11,14 +11,35 @@
     <script>
         $(function(){
             $("#Entrar").click(function(){
-                crearSesion();
+                agregarCartas();
             });
 
             /* funcion crea variable de session en localStorage */
-            function crearSesion(){
-                var codigo= $("#codigo").val();
-                var sesion = window.localStorage.setItem('partida', codigo);
-                console.log(sesion);
+            function agregarCartas(){
+                let cartas = {
+                    Pedro: 1,
+                    Juan: 2,
+                    Carlos: 3,
+                    Juanita: 4,
+                    Antonio: 5,
+                    Carolina: 6,
+                    Manuel: 7,
+                    Nómina: 8,
+                    Facturación: 9,
+                    Recibos: 10,
+                    ComprobanteContable: 11,
+                    Usuarios: 12,
+                    Contabilidad: 13,
+                    Error404: 14,
+                    StackOverflow: 15,
+                    MemoryOutOOfRange: 16,
+                    NullPointer: 17,
+                    SyntaxError: 18,
+                    EncodingError: 19,
+                };
+                let codigo= $("#codigo").val();
+                localStorage.setItem("partida", codigo);
+                localStorage.setItem("cartas", JSON.stringify(cartas));
             }
         })
 
