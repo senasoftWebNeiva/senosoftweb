@@ -6,15 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@lang('JoinGame')</title>
     <link rel="stylesheet" href="../css/app.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("#Unirse").click(function(){
+                crearSesion();
+            });
+
+            /* funcion crea variable de session en localStorage */
+            function crearSesion(){
+                var codigo= $("#codigo").val();
+                var sesion = window.localStorage.setItem('partida', codigo);
+                console.log(sesion);
+            }
+        })
+    </script>
 </head>
-<body>     
+<body>
     <img class="logo" src="../images/logoUnirse.svg" alt="">
     <div class="container">
         <br><br><br><br><br>
         <span class="titulo">CODIGO:</span>
-        <input class="form-control" type="text" placeholder="A83D3" name="codigo" id="">
-        <span>Pídele a un amigo que te comparta el código de</span><br><span>la partida.</span><br>
-        <a href="{{ route('crearPartida') }}"><button class="boton"></button></a>
+        <form action="{{ route('uniendose')}}" method="post">
+            @csrf
+            <input class="form-control" type="text" placeholder="A83D3" name="codigo" id="codigo" name="codigo">
+            <span>Pídele a un amigo que te comparta el código de</span><br><span>la partida.</span><br>
+            <input type="submit" class="boton" id="Unirse" name="Unirse" value="Unirse">
+        </form>
     </div>
 </body>
 </html>
@@ -81,5 +99,6 @@
         background-attachment: local;
         margin-top: 93px;
         margin-left: 25%;
+        color:transparent;
     }
 </style>

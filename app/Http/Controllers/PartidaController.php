@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\partida;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PartidaController extends Controller
 {
@@ -27,6 +28,19 @@ class PartidaController extends Controller
         //
     }
 
+    public function consultaUnion(Request $request){
+        $codigo=$request->codigo;
+
+        $partida= partida::where("codigo",$codigo)->where("estado","A")->get();
+
+        if(count($partida)>0){
+            /* return response()->json($partida); */
+            return view('/partida');
+        }else{
+            return response()->json('No aparece');
+        }
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -38,7 +52,7 @@ class PartidaController extends Controller
         $partida=request()->except('_token', 'Entrar');
         partida::insert($partida);
         /* return response()->json($partida); */
-        
+
         return view('/partida');
     }
 

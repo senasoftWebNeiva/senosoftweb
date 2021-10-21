@@ -46,11 +46,11 @@
     <div class="container">
         <br><br><br><br><br>
         <span class="titulo">CODIGO:</span>
-        <form action="{{ url('/crearpartida')}}" method="POST">
+        <form action="{{ url('/partida')}}" method="POST">
             @csrf
             <input class="form-control" type="text"  id="codigo" name="codigo">
             <span>Comparte este código con tus amigos para que</span><br><span>se puedan unir.</span><br>
-            <input type="button" class="boton" value="Entrar" name="Entrar" id="Entrar">
+            <input type="submit" class="boton" value="Entrar" name="Entrar" id="Entrar">
         </form>
     </div>
 </body>
