@@ -6,9 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@lang('CreateGame')</title>
     <link rel="stylesheet" href="../css/app.css">
+    <script>
+        generarCodigo();
+        function generarLetra(){
+	        var letras = ["a","b","c","d","e","f","0","1","2","3","4","5","6","7","8","9"];
+	        var numero = (Math.random()*15).toFixed(0);
+	        return letras[numero];
+        }
 
+        function generarCodigo(){
+	        var coolor = "";
+	        for(var i=0;i<5;i++){
+		        coolor = coolor + generarLetra() ;
+	        }
+            document.getElementById("codigo").value = coolor.toUpperCase();
+        }
+    </script>
 </head>
-<body>
+<body onload="generarCodigo();>
     <img class="logo" src="../images/logoCrear.svg" alt="">
     <div class="container">
         <br><br><br><br><br>
