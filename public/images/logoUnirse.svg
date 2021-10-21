@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="291.925" height="302.921" viewBox="0 0 291.925 302.921">
+  <defs>
+    <filter id="Trazado_380" x="0" y="6.788" width="275.257" height="296.133" filterUnits="userSpaceOnUse">
+      <feOffset dx="-35" dy="28" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.361" y1="-0.054" x2="0.61" y2="0.995" gradientUnits="objectBoundingBox">
+      <stop offset="0.237" stop-color="#992020"/>
+      <stop offset="0.385" stop-color="#ad2825"/>
+      <stop offset="0.798" stop-color="#e13b32"/>
+      <stop offset="1" stop-color="#f54337"/>
+    </linearGradient>
+  </defs>
+  <g id="OBJECTS" transform="translate(35.792 -5.64)">
+    <g id="Grupo_141" data-name="Grupo 141" transform="translate(4.85 5.64)">
+      <g id="Grupo_132" data-name="Grupo 132">
+        <path id="Trazado_379" data-name="Trazado 379" d="M205.6,104.244,64.839,20.965C38.18,5.2,4.85,24.911,4.85,56.464V223.007c0,31.553,33.33,51.268,59.989,35.484L205.6,175.227C232.275,159.443,232.275,120.013,205.6,104.244Z" transform="translate(-4.85 -1.834)" fill="#cacaff"/>
+        <g transform="matrix(1, 0, 0, 1, -40.64, 0)" filter="url(#Trazado_380)">
+          <path id="Trazado_380-2" data-name="Trazado 380" d="M215.823,99.354,75.059,16.075C48.4.306,15.07,20.021,15.07,51.574V218.117c0,31.552,33.33,51.268,59.989,35.484l140.764-83.265C242.5,154.553,242.5,115.123,215.823,99.354Z" transform="translate(39.43 -3.74)" fill="#a01f5a"/>
+        </g>
+        <path id="Trazado_381" data-name="Trazado 381" d="M228.123,94.462,87.359,11.2C60.7-4.586,27.37,15.129,27.37,46.682V213.225c0,31.553,33.33,51.268,59.989,35.484l140.764-83.265C254.782,149.662,254.782,110.231,228.123,94.462Z" transform="translate(3.167 -5.64)" fill="#f54337"/>
+        <path id="Trazado_382" data-name="Trazado 382" d="M231,104.058c0-.208-.014-.417-.014-.639C177.158,140.153,99.908,79.313,37.37,72.13V187.322a26.869,26.869,0,0,0,26.5,27.148h0a25.465,25.465,0,0,0,13.153-3.7l140.764-83.251A26.972,26.972,0,0,0,231,104.058Z" transform="translate(6.727 20.249)" fill="url(#linear-gradient)"/>
+        <path id="Trazado_383" data-name="Trazado 383" d="M211.6,102.6,70.835,19.336a25.6,25.6,0,0,0-13.153-3.7,25.132,25.132,0,0,0-6.9,1,26.759,26.759,0,0,1,6.2,2.7L197.741,102.6a27.412,27.412,0,0,1,0,46.905L56.977,232.784a27.012,27.012,0,0,1-6.2,2.7,25.131,25.131,0,0,0,6.9,1h0a25.465,25.465,0,0,0,13.153-3.7L211.6,149.519a27.424,27.424,0,0,0,0-46.919Z" transform="translate(11.5 -1.747)" fill="#a01f5a"/>
+        <path id="Trazado_384" data-name="Trazado 384" d="M39.666,209.332V42.788A26.877,26.877,0,0,1,61.809,16.043a24.274,24.274,0,0,0-4.393-.4,26.869,26.869,0,0,0-26.5,27.148V209.332a26.869,26.869,0,0,0,26.5,27.148h0a24.5,24.5,0,0,0,4.393-.4A26.877,26.877,0,0,1,39.666,209.332Z" transform="translate(4.43 -1.747)" fill="#a01f5a"/>
+        <path id="Trazado_385" data-name="Trazado 385" d="M63.866,236.48a26.869,26.869,0,0,1-26.5-27.148V42.788a26.869,26.869,0,0,1,26.5-27.148,25.43,25.43,0,0,1,13.153,3.7L217.783,102.6a27.412,27.412,0,0,1,0,46.905L77.019,232.784a25.6,25.6,0,0,1-13.153,3.7Z" transform="translate(6.727 -1.747)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="6"/>
+      </g>
+      <g id="Grupo_140" data-name="Grupo 140" transform="translate(54.969 91.265)">
+        <g id="Grupo_134" data-name="Grupo 134" transform="translate(0 0)">
+          <text id="Unirse" transform="translate(7.986 66.137) rotate(-9.997)" fill="none" stroke="#82164c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="43" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Unirse</tspan></text>
+          <text id="Unirse-2" data-name="Unirse" transform="translate(16.121 66.137) rotate(-9.997)" fill="none" stroke="#513a9b" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="43" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Unirse</tspan></text>
+          <text id="Unirse-3" data-name="Unirse" transform="translate(16.121 66.137) rotate(-9.997)" fill="#f9fbfc" font-size="43" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Unirse</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
