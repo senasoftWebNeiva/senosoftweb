@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\partida;
+use App\Models\carta;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
-class PartidaController extends Controller
+class CartaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,19 +28,6 @@ class PartidaController extends Controller
         //
     }
 
-    public function consultaUnion(Request $request){
-        $codigo=$request->codigo;
-
-        $partida= partida::where("codigo",$codigo)->where("estado","A")->get();
-
-        if(count($partida)>0){
-            /* return response()->json($partida); */
-            return view('/partida');
-        }else{
-            return redirect('unirse-a-una-partida')->with('mensaje', 'Partida no encontrada');
-        }
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -49,24 +36,16 @@ class PartidaController extends Controller
      */
     public function store(Request $request)
     {
-        $partida=request()->except('_token', 'Entrar');
-        partida::insert($partida);
-
-
-        $sesion=$request->session()->put(['Player 4']);
-        /* return response()->json($partida); */
-
-       return view('/partida');
-        /* return $request->session()->all(); */
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\partida  $partida
+     * @param  \App\Models\carta  $carta
      * @return \Illuminate\Http\Response
      */
-    public function show(partida $partida)
+    public function show(carta $carta)
     {
         //
     }
@@ -74,10 +53,10 @@ class PartidaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\partida  $partida
+     * @param  \App\Models\carta  $carta
      * @return \Illuminate\Http\Response
      */
-    public function edit(partida $partida)
+    public function edit(carta $carta)
     {
         //
     }
@@ -86,10 +65,10 @@ class PartidaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\partida  $partida
+     * @param  \App\Models\carta  $carta
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, partida $partida)
+    public function update(Request $request, carta $carta)
     {
         //
     }
@@ -97,10 +76,10 @@ class PartidaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\partida  $partida
+     * @param  \App\Models\carta  $carta
      * @return \Illuminate\Http\Response
      */
-    public function destroy(partida $partida)
+    public function destroy(carta $carta)
     {
         //
     }

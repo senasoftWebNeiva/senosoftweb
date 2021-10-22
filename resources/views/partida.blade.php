@@ -9,6 +9,14 @@
 </head>
 <body onload="ObtenerCodigo();">
     <div class="container">
+        @if (Session::has('mensaje'))
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ Session::get('mensaje') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times; </span>
+                </button>
+            </div>
+        @endif
         <div class="perfil">
             <img class="logo" src="../images/playerPerfil.svg" alt="Jugador">
             <span>
