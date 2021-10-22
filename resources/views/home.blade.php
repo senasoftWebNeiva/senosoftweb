@@ -25,7 +25,7 @@
         font-size: 123px;
         text-align: center;
         width: 57%;
-        margin-top: 376px;
+        margin-top: 433px;
     }
     body{
         background-image: url('/images/inicio.svg');

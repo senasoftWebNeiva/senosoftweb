@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="713.199" height="1113.642" viewBox="0 0 713.199 1113.642">
+  <defs>
+    <filter id="Rectángulo_270" x="0" y="39.864" width="713.199" height="1073.778" filterUnits="userSpaceOnUse">
+      <feOffset dx="-34" dy="55" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_270-2" x="0" y="39.864" width="713.199" height="1073.778" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur-2"/>
+      <feFlood flood-color="#ff9810" flood-opacity="0.6" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_270)">
+      <rect id="Rectángulo_270-3" data-name="Rectángulo 270" width="635.199" height="979.778" rx="65" transform="translate(73 39.86)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_270-2)">
+      <rect id="Rectángulo_270-4" data-name="Rectángulo 270" width="635.199" height="979.778" rx="65" transform="translate(73 39.86)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Rectángulo_364" data-name="Rectángulo 364" transform="translate(99.19 0)" fill="#ff9810" stroke="#ffb30b" stroke-width="8">
+    <rect width="272.909" height="74" rx="8" stroke="none"/>
+    <rect x="4" y="4" width="264.909" height="66" rx="4" fill="none"/>
+  </g>
+  <g id="Grupo_308" data-name="Grupo 308" transform="matrix(0.985, 0.174, -0.174, 0.985, 182.786, -6.105)">
+    <text id="Cartas" transform="translate(7.118 57.563) rotate(-9.997)" fill="none" stroke="#513a9b" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+    <text id="Cartas-2" data-name="Cartas" transform="translate(14.928 57.563) rotate(-9.997)" fill="none" stroke="#82164c" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+    <text id="Cartas-3" data-name="Cartas" transform="translate(14.928 57.563) rotate(-9.997)" fill="#f9fbfc" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+  </g>
+  <g id="Rectángulo_363" data-name="Rectángulo 363" transform="translate(408.766)" fill="#ff9810" stroke="#ffb30b" stroke-width="8">
+    <rect width="272.909" height="74" rx="8" stroke="none"/>
+    <rect x="4" y="4" width="264.909" height="66" rx="4" fill="none"/>
+  </g>
+  <g id="Grupo_307" data-name="Grupo 307" transform="matrix(0.985, 0.174, -0.174, 0.985, 494.861, -6.96)">
+    <text id="Notas" transform="translate(7.118 57.563) rotate(-9.997)" fill="none" stroke="#513a9b" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Notas</tspan></text>
+    <text id="Notas-2" data-name="Notas" transform="translate(14.928 57.563) rotate(-9.997)" fill="none" stroke="#e0750a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Notas</tspan></text>
+    <text id="Notas-3" data-name="Notas" transform="translate(14.928 57.563) rotate(-9.997)" fill="#f9fbfc" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Notas</tspan></text>
+  </g>
+</svg>

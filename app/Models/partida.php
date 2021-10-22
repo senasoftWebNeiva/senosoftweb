@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class partida extends Model
 {
-    protected $fillable = ['codigo'];
+    protected $fillable = ['codigo', 'name'];
     use HasFactory;
 }

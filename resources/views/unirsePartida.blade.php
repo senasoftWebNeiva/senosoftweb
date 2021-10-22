@@ -31,6 +31,8 @@
             @csrf
             <input class="form-control" type="text" placeholder="A83D3" name="codigo" id="codigo" name="codigo">
             <span>Pídele a un amigo que te comparta el código de</span><br><span>la partida.</span><br>
+            <span class="titulo">Nombre:</span>
+            <input class="form-control" type="text"  id="name" name="name">
             <input type="submit" class="boton" id="Unirse" name="Unirse" value="Unirse">
         </form>
     </div>
@@ -51,17 +53,17 @@
     .container{
         background-color: white;
         width: 589px;
-        height: 488px;
+        height: 579px;
         border-radius: 112px;
-        margin-left: 31%;
-        margin-top: 16%;
+        margin-left: 34%;
+        margin-top: 14%;
         text-align: left;
         box-shadow: inset -13px -2px 20px 3px rgb(160 31 90 / 63%), -20px 20px 21px 0px rgb(0 0 0 / 42%);
     }
     .logo{
         float: left;
-        margin-left: 39%;
-        margin-top: -8%;
+        margin-left: 40.5%;
+        margin-top: -6%;
     }
     img{
         width: 301px;
@@ -97,8 +99,8 @@
         height: 82.79px;
         background-repeat: no-repeat;
         background-attachment: local;
-        margin-top: 93px;
-        margin-left: 25%;
+        margin-top: 34px;
+        margin-left: 27%;
         color:transparent;
     }
 </style>

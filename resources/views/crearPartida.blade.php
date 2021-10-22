@@ -16,30 +16,30 @@
 
             /* funcion crea variable de session en localStorage */
             function agregarCartas(){
-                let cartas = {
-                    Pedro: 1,
-                    Juan: 2,
-                    Carlos: 3,
-                    Juanita: 4,
-                    Antonio: 5,
-                    Carolina: 6,
-                    Manuel: 7,
-                    Nómina: 8,
-                    Facturación: 9,
-                    Recibos: 10,
-                    ComprobanteContable: 11,
-                    Usuarios: 12,
-                    Contabilidad: 13,
-                    Error404: 14,
-                    StackOverflow: 15,
-                    MemoryOutOOfRange: 16,
-                    NullPointer: 17,
-                    SyntaxError: 18,
-                    EncodingError: 19,
-                };
-                let codigo= $("#codigo").val();
-                localStorage.setItem("partida", codigo);
-                localStorage.setItem("cartas", JSON.stringify(cartas));
+                let codigo = $("#codigo").val();
+                let name = $('#name').val();
+                miStorage = window.localStorage;
+                miStorage.setItem("partida", codigo);
+                miStorage.setItem("jugador", name);
+                miStorage.setItem("1", "Pedro");
+                miStorage.setItem("2", "Juan");
+                miStorage.setItem("3", "Carlos");
+                miStorage.setItem("4", "Juanita");
+                miStorage.setItem("5", "Antonio");
+                miStorage.setItem("6", "Carolina");
+                miStorage.setItem("7", "Manuel");
+                miStorage.setItem("8", "Nómina");
+                miStorage.setItem("9", "Facturación");
+                miStorage.setItem("10", "Recibos");
+                miStorage.setItem("11", "Comprobante Contable");
+                miStorage.setItem("12", "Usuarios");
+                miStorage.setItem("13", "Contabilidad");
+                miStorage.setItem("14", "404");
+                miStorage.setItem("15", "Stack Over flow");
+                miStorage.setItem("16", "Memory Out OfRange");
+                miStorage.setItem("17", "Null Pointer");
+                miStorage.setItem("18", "Syntax Error");
+                miStorage.setItem("19", "Encoding Error");
             }
         })
 
@@ -71,6 +71,8 @@
             @csrf
             <input class="form-control" type="text"  id="codigo" name="codigo">
             <span>Comparte este código con tus amigos para que</span><br><span>se puedan unir.</span><br>
+            <span class="titulo">Nombre:</span>
+            <input class="form-control" type="text"  id="name" name="name">
             <input type="submit" class="boton" value="Entrar" name="Entrar" id="Entrar">
         </form>
     </div>
@@ -91,16 +93,16 @@
     .container{
         background-color: white;
         width: 589px;
-        height: 457px;
+        height: 579px;
         border-radius: 112px;
-        margin-left: 31%;
-        margin-top: 16%;
+        margin-left: 34%;
+        margin-top: 14%;
         text-align: left;
         box-shadow: inset -13px -2px 20px 3px rgb(139 129 234), -20px 20px 21px 0px rgb(0 0 0 / 42%);
     }
     .logo{
         float: left;
-        margin-left: 37.5%;
+        margin-left: 39.5%;
         margin-top: -8%;
     }
     img{
@@ -137,7 +139,7 @@
         height: 82.79px;
         background-repeat: no-repeat;
         background-attachment: local;
-        margin-top: 63px;
+        margin-top: 75px;
         margin-left: 27%;
         color: transparent;
     }

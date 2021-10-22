@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="197.264" height="72" viewBox="0 0 197.264 72">
+  <g id="Grupo_254" data-name="Grupo 254" transform="translate(79 -0.878)">
+    <g id="Rectángulo_262" data-name="Rectángulo 262" transform="translate(-79 0.878)" fill="#ffb30b" stroke="#ff9810" stroke-width="8">
+      <rect width="197.264" height="72" rx="22" stroke="none"/>
+      <rect x="4" y="4" width="189.264" height="64" rx="18" fill="none"/>
+    </g>
+    <g id="Grupo_242" data-name="Grupo 242" transform="matrix(0.985, 0.174, -0.174, 0.985, -29.139, -8.077)">
+      <g id="Grupo_129" data-name="Grupo 129" transform="translate(0.718 4.561)">
+        <text id="Preguntar" transform="translate(-17.386 56.179) rotate(-9.997)" fill="none" stroke="#e0750a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Preguntar</tspan></text>
+        <text id="Preguntar-2" data-name="Preguntar" transform="translate(-14.308 53.666) rotate(-9.997)" fill="none" stroke="#513a9b" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Preguntar</tspan></text>
+        <text id="Preguntar-3" data-name="Preguntar" transform="translate(-14.309 53.666) rotate(-9.997)" fill="#f9fbfc" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Preguntar</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

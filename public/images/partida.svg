@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="713.199" height="590.988" viewBox="0 0 713.199 590.988">
+  <defs>
+    <filter id="Trazado_1080" x="0" y="24.538" width="713.199" height="566.449" filterUnits="userSpaceOnUse">
+      <feOffset dx="-34" dy="55" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Trazado_1080-2" x="0" y="24.538" width="713.199" height="566.449" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur-2"/>
+      <feFlood flood-color="#8b81ea" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_1080)">
+      <path id="Trazado_1080-3" data-name="Trazado 1080" d="M58,0H577.2a58,58,0,0,1,58,58V414.449a58,58,0,0,1-58,58H58a58,58,0,0,1-58-58V58A58,58,0,0,1,58,0Z" transform="translate(73 24.54)" fill="#e0e0e0"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Trazado_1080-2)">
+      <path id="Trazado_1080-4" data-name="Trazado 1080" d="M58,0H577.2a58,58,0,0,1,58,58V414.449a58,58,0,0,1-58,58H58a58,58,0,0,1-58-58V58A58,58,0,0,1,58,0Z" transform="translate(73 24.54)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="Grupo_243" data-name="Grupo 243" transform="translate(261.625 -6.96)">
+    <g id="Rectángulo_262" data-name="Rectángulo 262" transform="translate(0 6.96)" fill="#ffb30b" stroke="#ff9810" stroke-width="8">
+      <rect width="261" height="74" rx="37" stroke="none"/>
+      <rect x="4" y="4" width="253" height="66" rx="33" fill="none"/>
+    </g>
+    <g id="Grupo_242" data-name="Grupo 242" transform="matrix(0.985, 0.174, -0.174, 0.985, 77.791, 0)">
+      <g id="Grupo_129" data-name="Grupo 129" transform="translate(0 0)">
+        <text id="Cartas" transform="translate(7.118 58.431) rotate(-9.997)" fill="none" stroke="#e0750a" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+        <text id="Cartas-2" data-name="Cartas" transform="translate(14.928 58.431) rotate(-9.997)" fill="none" stroke="#513a9b" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+        <text id="Cartas-3" data-name="Cartas" transform="translate(14.928 58.431) rotate(-9.997)" fill="#f9fbfc" font-size="38" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Cartas</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

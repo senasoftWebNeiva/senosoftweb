@@ -16,6 +16,7 @@ class CreatePartidasTable extends Migration
         Schema::create('partidas', function (Blueprint $table) {
             $table->id();
             $table->string('codigo', 5);
+            $table->string('name');
             $table->enum('estado',['A', 'I']);
             $table->timestamps();
         });

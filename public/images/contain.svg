@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="578.62" height="271.247" viewBox="0 0 578.62 271.247">
+  <defs>
+    <filter id="Rectángulo_271" x="0" y="0" width="578.62" height="271.247" filterUnits="userSpaceOnUse">
+      <feOffset dx="-34" dy="33" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_271-2" x="0" y="0" width="578.62" height="271.247" filterUnits="userSpaceOnUse">
+      <feOffset dx="-5" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur-2"/>
+      <feFlood flood-color="#a01f5a" flood-opacity="0.729" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_271)">
+      <rect id="Rectángulo_271-3" data-name="Rectángulo 271" width="500.62" height="193.247" rx="63" transform="translate(73 6)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectángulo_271-2)">
+      <rect id="Rectángulo_271-4" data-name="Rectángulo 271" width="500.62" height="193.247" rx="63" transform="translate(73 6)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
