@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@lang('JoinGame')</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/app.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
@@ -15,11 +19,18 @@
                 crearSesion();
             });
 
-            /* funcion crea variable de session en localStorage */
+            /* funcion verifica si existe variable de sesion de lo contrario
+            crea variable de session en localStorage */
             function crearSesion() {
-                var codigo = $("#codigo").val();
-                var sesion = window.localStorage.setItem('partida', codigo);
-                console.log(sesion);
+                if (window.localStorage) {
+                    if (window.localStorage.getItem('partida') == $("#codigo").val()) {
+                        console.log('hay local');
+                    }else{
+                        var codigo = $("#codigo").val();
+                        var sesion = window.localStorage.setItem('partida', codigo);
+                        console.log('almacenado');
+                    }
+                }
             }
         })
     </script>
@@ -36,13 +47,19 @@
             <input type="submit" class="boton" id="Unirse" name="Unirse" value="Unirse">
         </form>
     </div>
+    <br>
+
     @if (Session::has('mensaje'))
+    <div class="alert alert-warning alert-dismissible">
+        {{ Session::get('mensaje') }}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+      </div>{{--
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             {{ Session::get('mensaje') }}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times; </span>
             </button>
-        </div>
+        </div> --}}
     @endif
 </body>
 

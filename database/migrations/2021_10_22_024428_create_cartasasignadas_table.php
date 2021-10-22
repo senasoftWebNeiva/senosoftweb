@@ -16,10 +16,10 @@ class CreateCartasasignadasTable extends Migration
         Schema::create('cartasasignadas', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('jugador_id');
-            $table->unsignedBigInteger('carta_id');
+            /* $table->unsignedBigInteger('carta_id'); */
             $table->timestamps();
             $table->foreign('jugador_id')->references('id')->on('jugadors');
-            $table->foreign('carta_id')->references('id')->on('cartas');;
+            /* $table->foreign('carta_id')->references('id')->on('cartas');; */
         });
     }
 

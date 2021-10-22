@@ -51,9 +51,13 @@ class PartidaController extends Controller
     {
         $partida=request()->except('_token', 'Entrar');
         partida::insert($partida);
+
+
+        $sesion=$request->session()->put(['Player 4']);
         /* return response()->json($partida); */
 
-        return view('/partida');
+       return view('/partida');
+        /* return $request->session()->all(); */
     }
 
     /**
